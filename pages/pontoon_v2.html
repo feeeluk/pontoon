@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontoon V2</title>
+    <link rel="stylesheet" href="/styles/pontoon_2.css?v020">
+    <script src="/javascript/pontoon_2_deck.js?v002" defer></script>
+    <script src="/javascript/pontoon_2_state.js?v002" defer></script>
+    <script src="/javascript/pontoon_2_ui.js?v003" defer></script>
+    <script src="/javascript/pontoon_2_flow.js?v002" defer></script>
+</head>
+<body>
+
+    <div id="gameArea">
+
+        <div id="titleArea">
+            <h1>Pontoon V2</h1>
+        </div>
+
+        <!-- Alt -->
+        <div id="play">
+            <h1>Pontoon V2</h1>
+            <button id="playButton">Play Game</button>
+        </div>
+        
+        <div id="playersArea">
+                
+            <div id="userArea">
+                <div class="header">
+                    <h4>User</h4>
+                </div>
+
+                <div class="cardsArea" class="disabled"> 
+                    <span class="cardsTitle">Cards:</span>
+                    <span id="uCards"></span>
+
+                    <span id="uAceTitle" class="disabled">Choose Ace value</span>
+                    <button id="uAceOne" class="choices aceChoice" value="1" disabled>1</button>
+                    <button id="uAceEleven" class="choices aceChoice" value="11" disabled>11</button>
+
+                    <span id="uActionTitle" class="disabled">Actions</span>
+                    <button id="uActionTwist" class="choices actionChoice" value="twist" disabled>Twist</button>
+                    <button id="uActionStick" class="choices actionChoice" value="stick" disabled>Stick</button>
+                </div>
+
+                <div class="score">Score:<span id="uScore"></span></div>
+                <div class="count">Count:<span id="uCount"></span></div>
+                <div class="history">History:<span><ul id="uHistory"></ul></span></div>
+            </div>
+
+            <div id="dealerArea">
+                <div class="header">
+                    <h4>Dealer</h4>
+                </div>
+
+                <div class="cardsArea">
+                    <span class="cardsTitle">Cards:</span>
+                    <span id="dCards"></span>
+                </div>
+
+                <div class="score">Score:<span id="dScore"></span></div>
+                <div class="count">Count:<span id="dCount"></span></div>
+                <div class="history">History:<span><ul id="dHistory"></ul></span></div>
+            </div>
+
+        </div>
+
+        <div id="resultArea">
+            <span id="result1" class="result1">Result:</span>
+
+            <span id="resultBox" class="result2">
+                <span id="resultMessage">Result message</span>
+                <button id="playAgain" disabled>Play Again</button>
+            </span>
+
+            <span id="result3" class="result1"></span>
+        </div>
+
+    </div>
+
+</body>
+</html>
